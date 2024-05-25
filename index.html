@@ -20,40 +20,38 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">Portfolio</a>
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                
-                <li class="item">
-                    <a class="link" href="#service">Resume</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#blog">Projects</a>
-                </li>
-
-                <li class="item">
-                    <a class="link" href="#Certifications">Certifications</a>
-                </li>
-                
-                <li class="item ml-md-3">
-                    <a href="#followme" class="btn btn-primary">Contact</a>
-                </li>
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
-            </a>
-        </div>
-    </nav><!-- End of Page Navbar -->
+   <!-- Page Navbar -->
+<nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="logo" href="#">Portfolio</a>
+        <ul class="nav">
+            <li class="item">
+                <a class="link" href="#home">Home</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#about">About</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#service">Resume</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#blog">Projects</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#Certifications">Certifications</a>
+            </li>
+            
+            <li class="item ml-md-3">
+                <a href="#followme" class="btn btn-primary">Contact</a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </a>
+    </div>
+</nav><!-- End of Page Navbar -->
 
     <!-- page header -->
     <header id="home" class="header">
@@ -796,6 +794,28 @@
             <!-- Link to LinkedIn profile -->
             <a href="https://www.linkedin.com/in/linda-gacha" target="_blank" class="btn btn-outline-primary rounded">Send Message via LinkedIn</a>                 
         </div>
+        <!-- contact form -->
+        <div class="container mt-5">
+            
+            <form action="contact.php" method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" name="name" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="message" id="comment" rows="6" class="form-control" placeholder="Write Something" required></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form>
+        </div>
+<!-- end of contact form -->
+
 
     </div><!-- end of container -->
 </section><!-- end of contact section -->
